@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/eutud/Desktop/Tudor/Projects/3/Tudor_Complete.html -->
+<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths js no-flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async="" src="./Tudor_Complete_files/ga.js"></script><script type="text/javascript" async="" src="./Tudor_Complete_files/ga(1).js"></script><script id="undefined" src="./Tudor_Complete_files/inpage_linkid.js" async="" type="text/javascript"></script>
+  <meta charset="utf-8">
+  <title>TudorBogdanBelei</title>
+    <!--Stylesheets and Fonts-->
+  <link rel="stylesheet" href="./Tudor_Complete_files/normalize.css">
+  <link rel="stylesheet" href="./Tudor_Complete_files/homepage.css">
+  <link href="./Tudor_Complete_files/css.css" rel="stylesheet" type="text/css">
+    
+    <!--Favicon-->
+	<link rel="icon" href="https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/favicon.ico" type="image/x-icon"> 
+	<link rel="shortcut icon" href="https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/favicon.ico" type="image/x-icon">
+    <script src="./Tudor_Complete_files/ga(2).js" async="" type="text/javascript"></script><script type="text/javascript">
+        var cdnStatic = 'https://d1wufgde20uhiw.cloudfront.net/v9/20150303';
+    </script>
+  <!--Javascript-->
+  <script type="text/javascript" src="./Tudor_Complete_files/jquery-1.js"></script>
+  <script src="./Tudor_Complete_files/modernizr-2.js"></script>
+  <script type="text/javascript" src="./Tudor_Complete_files/home.js"></script>
+  <script src="./Tudor_Complete_files/analytics.js"></script>
+
+  <!--[if lte IE 10]><script type='text/javascript' src='/js/jquery.html5-placeholder-shim.js'></script><![endif]-->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  <script>
+   function bindGALinkClicks() {
+      function trackEvent(category, action, label) { //, value) {
+
+          _gaq.push(['_trackEvent', category, action, label]); //, value]);
+
+      }
+      $('a#download').click(function () {
+          trackEvent('homepage', 'click', 'consumers');//, price);
+          return true;
+      });
+      $('a.appbutton.ios').click(function () {
+          trackEvent('homepage', 'click', 'download_ios');//, price);
+          return true;
+      });
+      $('a.appbutton.android').click(function () {
+          trackEvent('homepage', 'click', 'download_android');//, price);
+          return true;
+      });
+  }
+
+  $(document).ready(function () {
+      bindGALinkClicks();
+
+      if(window.location.hash.indexOf('#download') > -1) {
+        $('.overlay').fadeIn();
+        $('.dialog').fadeIn();
+        $('.dialog').addClass('drop');
+      }
+
+  });
+  </script>
+
+<style>
+.fly-banner {
+  position:fixed;
+  left: 40px;
+  z-index: 10000;
+}
+.fly-banner img {
+  width: 54px;
+  height: auto;
+}
+footer {
+  height:212px
+}
+a.caption {
+  color: rgba(255,255,255,0.8);
+font-size: 12px;
+margin-bottom: 16px;
+text-decoration: none
+}
+
+.fly-announcement img {
+  margin-top: 35px;
+  width:400px;
+  height: auto;
+}
+
+.fly-announcement-mobile {
+  z-index: 10000;
+  position: fixed;
+  display: block;
+  right: 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  margin: 5px 5px 5px 5px;
+ }
+ .fly-announcement-mobile img {
+  width: 190px;
+  height: auto;
+ }
+
+@media only screen and (min-device-width: 640px) {
+
+  .fly-announcement-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 640px) and (orientation:landscape) {
+     .fly-banner {
+       display: none;
+     }
+     .fly-announcement {
+      display: none;
+     }
+     .fly-announcement-mobile {
+      display: block;
+     }
+}
+@media only screen and (max-device-height: 480px) and (orientation: portrait) {
+     .fly-banner {
+       display: none;
+     }
+     .fly-announcement {
+      display: none;
+     }
+     .fly-announcement-mobile {
+      display: block;
+     }
+}
+@media only screen and (max-device-width: 640px) {
+     .fly-banner {
+       display: none;
+     }
+     .fly-announcement {
+      display: none;
+     }
+     .fly-announcement-mobile {
+      display: block;
+     }
+}
+.tiny-caption {
+  clear: left;
+  width: 100%;
+  display: block;
+  font-size: 10px;
+  line-height: 10px;
+  padding-top: 6px !important;
+}
+.appbutton.ios {
+  background: url(../img/appstore2.png) no-repeat 50% 50%;
+  margin-right: 6px;
+}
+.appbutton.android {
+  background: url(../img/playstore2.png) no-repeat 50% 50%;
+}
+</style>
+<meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"></head></meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<body class="splash desktop-resize"><div id="big-video-wrap"><div id="big-video-vid" class="video-js vjs-default-skin fade-in vjs-playing" style="width: 1382.6px; height: 921px; display: block; top: 0px; left: -250.302px;"><video id="big-video-vid_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline="" style="position: absolute; width: 1382.6px;" autoplay="" src="blob:https%3A//www.youtube.com/2baaf33e-a5dc-4c6b-80b0-297c55920d98"></video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner" style="display: none;"></div><div class="vjs-big-play-button" aria-live="polite" tabindex="0" aria-label="play video" style="display: none;"><span></span></div><div class="vjs-control-bar" style="display: none;"><div class="vjs-play-control vjs-control  vjs-playing" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Pause</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:50</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time </span>0:53</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time </span>-0:02</div></div><div class="vjs-progress-control vjs-control"><div aria-valuenow="95.2" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:50"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text">Loaded: 0%</span></div><div class="vjs-play-progress" style="width: 95.2%;"><span class="vjs-control-text">Progress: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" style="left: 95.2%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="0%"><div class="vjs-volume-level" style="width: 0%;"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle" style="left: 0%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control vjs-vol-0" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div></div><div id="big-video-wrap"><div style="width: 1920px; height: 1278.98px; display: block; top: -158.489px; left: 0px;" class="video-js vjs-default-skin vjs-playing fade-in" id="big-video-vid"><div id="big-video-vid_html5_api" class="vjs-tech vjs-paused" style="width: 1px; height: 1px;"><video src="Tudor_Complete_files/aviaryvideo.ogv" autoplay="" style="position: absolute; width: 100%;" id="big-video-vid_html5_api_html5_api" class="vjs-tech" preload="auto" data-setup="{}" webkit-playsinline=""></video><div></div><div class="vjs-poster" tabindex="-1" style="display: none;"></div><div class="vjs-text-track-display"></div><div class="vjs-loading-spinner" style="display: none;"></div><div class="vjs-big-play-button" aria-live="polite" tabindex="0" aria-label="play video" style="display: none;"><span></span></div><div class="vjs-control-bar vjs-fade-out vjs-lock-showing" style="display: none;"><div class="vjs-play-control vjs-control  vjs-paused" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:36</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time </span>0:00</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time </span>-0:00</div></div><div class="vjs-progress-control vjs-control"><div aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="0:36"><div class="vjs-load-progress"><span class="vjs-control-text">Loaded: 0%</span></div><div class="vjs-play-progress" style="width: 0%;"><span class="vjs-control-text">Progress: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" style="left: 0%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-fullscreen-control vjs-control " aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level" style="width: 100%;"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle" style="left: 100%;"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Subtitles Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div><div class="vjs-captions-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Captions Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control " aria-live="polite" tabindex="0" aria-haspopup="true" role="button" aria-label="Chapters Menu" style="display: none;"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div><div></div><div style="display: none;" tabindex="-1" class="vjs-poster"></div><div class="vjs-text-track-display"></div><div style="display: none;" class="vjs-loading-spinner"></div><div style="display: none;" aria-label="play video" tabindex="0" aria-live="polite" class="vjs-big-play-button"><span></span></div><div style="display: none;" class="vjs-control-bar vjs-fade-out"><div tabindex="0" aria-live="polite" class="vjs-play-control vjs-control  vjs-playing"><div class="vjs-control-content"><span class="vjs-control-text">Pause</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div aria-live="off" class="vjs-current-time-display"><span class="vjs-control-text">Current Time </span>0:35</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div aria-live="off" class="vjs-duration-display"><span class="vjs-control-text">Duration Time </span>0:53</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div aria-live="off" class="vjs-remaining-time-display"><span class="vjs-control-text">Remaining Time </span>-0:17</div></div><div class="vjs-progress-control vjs-control"><div aria-valuetext="0:35" aria-label="video progress bar" class="vjs-progress-holder vjs-slider" tabindex="0" aria-valuemax="100" aria-valuemin="0" aria-valuenow="67.76"><div style="width: 99.62%;" class="vjs-load-progress"><span class="vjs-control-text">Loaded: 0%</span></div><div style="width: 67.76%;" class="vjs-play-progress"><span class="vjs-control-text">Progress: 0%</span></div><div style="left: 67.76%;" class="vjs-seek-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div tabindex="0" aria-live="polite" class="vjs-fullscreen-control vjs-control "><div class="vjs-control-content"><span class="vjs-control-text">Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div aria-valuetext="0%" aria-label="volume level" class="vjs-volume-bar vjs-slider" tabindex="0" aria-valuemax="100" aria-valuemin="0" aria-valuenow="0"><div style="width: 0%;" class="vjs-volume-level"><span class="vjs-control-text"></span></div><div style="left: 0%;" class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div tabindex="0" aria-live="polite" class="vjs-mute-control vjs-control vjs-vol-0"><div><span class="vjs-control-text">Mute</span></div></div><div aria-label="Subtitles Menu" style="display: none;" role="button" aria-haspopup="true" tabindex="0" aria-live="polite" class="vjs-subtitles-button vjs-menu-button vjs-control "><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li aria-selected="true" tabindex="0" aria-live="polite" class="vjs-menu-item vjs-selected">subtitles off</li></ul></div></div><div aria-label="Captions Menu" style="display: none;" role="button" aria-haspopup="true" tabindex="0" aria-live="polite" class="vjs-captions-button vjs-menu-button vjs-control "><div class="vjs-control-content"><span class="vjs-control-text">Captions</span></div><div class="vjs-menu"><ul class="vjs-menu-content"><li aria-selected="true" tabindex="0" aria-live="polite" class="vjs-menu-item vjs-selected">captions off</li></ul></div></div><div aria-label="Chapters Menu" role="button" aria-haspopup="true" style="display: none;" tabindex="0" aria-live="polite" class="vjs-chapters-button vjs-menu-button vjs-control "><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span></div><div class="vjs-menu"><ul class="vjs-menu-content"></ul><li class="vjs-menu-title">Chapters</li></div></div></div></div></div>
+    <a class="fly-banner fade-in" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater"><img src="./Tudor_Complete_files/MTI5MDI2MTQzMDYyOTI4MDAz.jpg"></a>
+    <div class="main">
+      <a class="fly-announcement-mobile" target="_blank" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater"><img src="./Tudor_Complete_files/fly-announcement-mobile.png"></a>
+      <div class="identity fade-in"></div>
+      <h1 id="tagline" class="fade-in">Friendship is Magic.</h1>
+        <a href="#" id="downloadMobile" class="fade-delay"><span>Available on iOS<br>and Android</span></a>
+        <a id="menuButton" class="fade-delay" onclick="toggleMenu()" href="#"><img src="./Tudor_Complete_files/menu2x.png"></a>
+        <div class="tiny fade-delay"><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Developers</a><a class="tiny-caption" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater" target="_blank">Copyright © .<br>All rights reserved.</a></div>
+        
+        <a class="fly-announcement" target="_blank" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater"><img src="./Tudor_Complete_files/image01.gif"></a>              
+    </div>
+    <footer class="splash fade-in">
+      <ul class="mini-sites">
+        <li>
+          <a href="#" class="mini-site aviaryapp" id="download">
+            <h4>Programmer Editor</h4>
+            <p id="downloadDescription">Get the job done →</p>
+          </a>
+        </li><li>
+          <a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater" class="mini-site developers">
+            <h4>Becoming Developer</h4>
+            <p>Add your skills here →</p>
+          </a>
+      </li></ul>
+      <ul class="links home">
+        <li class="current"><a href="#">Home</a>
+        </li><li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Company</a>
+        </li><li><a target="_blank" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Jobs</a>
+        </li><li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">News</a>
+        </li><li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Blog</a>
+        </li><li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Support</a>
+      </li></ul>
+      <a class="caption" target="_blank" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Copyright ©. All rights reserved.</a>
+    </footer>
+    <nav>
+        <ul id="menu">
+            <li><a class="highlight developers" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Developers<span>Add Tudor to your Company</span></a></li>
+            <li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Company</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Jobs</a></li>
+            <li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">News</a></li>
+            <li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Blog</a></li>
+            <li><a href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater">Support</a></li>
+        </ul>
+    </nav>
+    <script>
+      $(function() {
+          if (Modernizr.touch) {
+                // Load Backstretch for slideshow and Mobile BG
+                $.getScript("https://d1wufgde20uhiw.cloudfront.net/v9/20150303/js/libs/jquery.backstretch.min.js", function() {
+                if ($(window).width()>640) {
+                // Show first slide as background till slideshow loads
+                $("body").addClass("mobilebg");
+                // Slideshow 
+                $("html").backstretch([
+                  "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg1.jpg"
+                , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg2.jpg"
+                , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg3.jpg"
+                , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg4.jpg"
+                    , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg5.jpg"
+                    , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg6.jpg"
+                    , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg7.jpg"
+                    , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg8.jpg"
+                    , "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/video/bg8.jpg"
+              ], {duration: 2000, fade: 400}); }
+                else if ($(window).width()<640) {
+                  //Set background image for mobile phones
+                  $(".main").backstretch("https://d1wufgde20uhiw.cloudfront.net/v9/20150303/img/bg-hero-brands.jpg");
+                }
+            });
+          } else if (!Modernizr.touch && $(window).width()>640){
+                //Get BigVideo dependencies, wait for each to be loaded
+                $.getScript( "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/js/libs/BigVideo/jquery-ui.min.js" ).done(function(){
+                $.getScript( "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/js/libs/BigVideo/video.js" ).done(function(){
+                $.getScript( "https://d1wufgde20uhiw.cloudfront.net/v9/20150303/js/libs/BigVideo/bigvideo.js" ).done(function(){
+                      //BigVideo in the background
+                        var BV = new $.BigVideo({useFlashForFirefox:false});
+                        BV.init();
+                        BV.show("https://d1wufgde20uhiw.cloudfront.net/v9/20150303/video/aviaryvideo.mp4", {altSource:"https://d1wufgde20uhiw.cloudfront.net/v9/20150303/video/aviaryvideo.ogv", ambient:true});
+                        //Check if video has started playing, then fade it in
+                        var vid = videojs("big-video-vid_html5_api");
+                        var playtime;
+                        vid.ready(function(){
+                            var playCheck=setInterval(function(){played()},100);
+                            function played()
+                            {
+                                playtime = vid.currentTime();
+                                if (playtime >= 0.5){
+                                    $("#big-video-vid").addClass("fade-in");
+                                    clearInterval(playCheck);
+                                }
+                            }
+                        });  
+                })
+                })
+                });
+            }
+
+          // SMS Logic
+          $('#sendSMS').click(function() {
+            var $phone = $('#phone');
+            var $message = $('#messageArea');
+            var $error = $('#messageError');
+
+            var cleanNumber = $phone.val().replace(/\D/g,'');
+            
+            if (cleanNumber.length >= 10) {
+              // send sms                            
+              $.post('/sms', {number: cleanNumber}, function(data) {
+                $message.html('<strong>Sent!</strong>');
+              }).fail(function(data){
+                $error.html('<p>There was a problem sending the message. Please check the number and try again.</p>');
+              });
+
+            }
+            return false;
+          });
+
+          $('#phone').keypress(function(e) {
+            if (e.which == 13) {
+              $('#sendSMS').click();
+            } else {
+              return isNumber(e);  
+            }            
+          });
+      });
+    </script>
+    
+    <!--Download links pop-up-->
+    <div class="overlay"></div>
+    <div class="dialog">
+        <h1>Get Tudor's assistance</h1>
+        <p>Make his time worth! Get to the point with short and concise answers.</p>
+        <a class="appbutton ios" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater" target="_blank"></a><a class="appbutton android" href="https://www.facebook.com/photo.php?fbid=10202794878902232&amp;set=a.1557966558269.2077792.1508412729&amp;type=3&amp;theater" target="_blank"></a> 
+        
+        <aside class="divider"></aside>
+        <div id="messageArea">
+          <p class="subtext">Ask Tudor for download link...</p>
+          <p class="button error">+<input id="phone" placeholder="40 740468313" type="text"></p><a class="button small" id="sendSMS" href="#">Send</a>
+          <div id="messageError"></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+    _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+    _gaq.push(['_setAccount', 'UA-84575-15']);
+    //_gaq.push(['_setAccount', 'UA-37038676-1']);
+
+    // Log any custom variables
+    for (var i = 0; i < Analytics.customVariables.length; i++) {
+        _gaq.push(Analytics.customVariables[i]);
+    }
+
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<script type="text/javascript">
+    /* Attach tracking to all download & external links */
+    var _gaq = _gaq || [];
+
+    function _gaLt(event){
+        var el = event.srcElement || event.target;
+
+        /* Loop up the tree through parent elements if clicked element is not a link (eg: an image in a link) */
+        while(el && (typeof el.tagName == 'undefined' || el.tagName.toLowerCase() != 'a' || !el.href))
+            el = el.parentNode;
+
+        if(el && el.href){
+        if(el.href.indexOf(location.host) == -1){ /* external link */
+                _gaq.push(["_trackEvent", "outbound_link", el.href, document.location.pathname + document.location.search]);
+                /* if target not set then delay opening of window by 0.5s to allow tracking */
+                if(!el.target || el.target.match(/^_(self|parent|top)$/i)){
+                    setTimeout(function(){
+                        document.location.href = el.href;
+                    }.bind(el),500);
+                    /* Prevent standard click */
+                    event.preventDefault ? event.preventDefault() : event.returnValue = false;
+                }
+            }
+
+        }
+    }
+
+    /* Attach the event to all clicks in the document after page has loaded */
+    var w = window;
+    w.addEventListener ? 
+        w.addEventListener("load",function(){document.body.addEventListener("click",_gaLt,false)},false) : 
+        w.attachEvent && w.attachEvent("onload",function(){document.body.attachEvent("onclick",_gaLt)});
+</script>
+
+<script type="text/javascript">
+    var _sf_async_config = { uid: 1001, domain: "TudorBogdanBelei.com" };
+    (function () {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") + "js/chartbeat.js");
+            document.body.appendChild(e);
+        }
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ? loadChartbeat : function () { oldonload(); loadChartbeat(); };
+    })();
+</script>
+
+<div style="display: none;" id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div style="width: 95.044%;" id="big-video-control-progress"></div><div aria-disabled="false" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="big-video-control-track"><a style="left: 94.7409%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer">0:50/0:53</div></div></div><script src="./Tudor_Complete_files/chartbeat.js" type="text/javascript" language="javascript"></script><script language="javascript" type="text/javascript" src="./Tudor_Complete_files/chartbeat(1).js"></script><div id="big-video-control-container"><div id="big-video-control"><a href="#" id="big-video-control-play"></a><div id="big-video-control-middle"><div id="big-video-control-bar"><div id="big-video-control-bound-left"></div><div id="big-video-control-progress"></div><div id="big-video-control-track"></div><div id="big-video-control-bound-right"></div></div></div><div id="big-video-control-timer"></div></div></div><script language="javascript" type="text/javascript" src="./Tudor_Complete_files/"></script></body></html>
